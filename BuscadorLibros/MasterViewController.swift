@@ -130,7 +130,7 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
     }
 
     func configureCell(cell: UITableViewCell, withObject object: NSManagedObject) {
-        cell.textLabel!.text = object.valueForKey("isbn")!.description
+        cell.textLabel!.text = object.valueForKey("titulo")!.description
     }
 
     // MARK: - Fetched results controller
@@ -149,7 +149,7 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         fetchRequest.fetchBatchSize = 20
         
         // Edit the sort key as appropriate.
-        let sortDescriptor = NSSortDescriptor(key: "isbn", ascending: false)
+        let sortDescriptor = NSSortDescriptor(key: "titulo", ascending: false)
         
         fetchRequest.sortDescriptors = [sortDescriptor]
         
