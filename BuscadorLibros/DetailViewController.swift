@@ -12,6 +12,8 @@ class DetailViewController: UIViewController {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
 
+    @IBOutlet weak var portada: UIImageView!
+    @IBOutlet weak var messaje: UITextView!
 
     var detailItem: AnyObject? {
         didSet {
@@ -24,8 +26,15 @@ class DetailViewController: UIViewController {
         // Update the user interface for the detail item.
         if let detail = self.detailItem {
             if let label = self.detailDescriptionLabel {
-                label.text = detail.valueForKey("timeStamp")!.description
+                label.text = detail.valueForKey("titulo")!.description
             }
+            if let portada = self.portada{
+                portada.image = UIImage(data: detail.valueForKey("portada")! as! NSData)
+            }
+            if let messaje = self.messaje{
+                messaje.text = detail.valueForKey("mensaje") as! String
+            }
+            self.title = detail.valueForKey("isbn") as? String
         }
     }
 

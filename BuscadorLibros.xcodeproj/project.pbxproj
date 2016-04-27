@@ -14,6 +14,7 @@
 		2C9CD3381CCFDE7300510454 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C9CD3361CCFDE7300510454 /* Main.storyboard */; };
 		2C9CD33A1CCFDE7300510454 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C9CD3391CCFDE7300510454 /* Assets.xcassets */; };
 		2C9CD33D1CCFDE7300510454 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C9CD33B1CCFDE7300510454 /* LaunchScreen.storyboard */; };
+		2C9CD3451CCFDFF100510454 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9CD3441CCFDFF100510454 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		2C9CD3391CCFDE7300510454 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C9CD33C1CCFDE7300510454 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C9CD33E1CCFDE7300510454 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C9CD3441CCFDFF100510454 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				2C9CD3321CCFDE7300510454 /* MasterViewController.swift */,
 				2C9CD3341CCFDE7300510454 /* DetailViewController.swift */,
 				2C9CD3361CCFDE7300510454 /* Main.storyboard */,
+				2C9CD3441CCFDFF100510454 /* SearchViewController.swift */,
 				2C9CD3391CCFDE7300510454 /* Assets.xcassets */,
 				2C9CD33B1CCFDE7300510454 /* LaunchScreen.storyboard */,
 				2C9CD33E1CCFDE7300510454 /* Info.plist */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C9CD3451CCFDFF100510454 /* SearchViewController.swift in Sources */,
 				2C9CD32E1CCFDE7300510454 /* AppDelegate.swift in Sources */,
 				2C9CD3311CCFDE7300510454 /* BuscadorLibros.xcdatamodeld in Sources */,
 				2C9CD3331CCFDE7300510454 /* MasterViewController.swift in Sources */,
